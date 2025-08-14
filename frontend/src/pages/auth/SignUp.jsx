@@ -44,7 +44,7 @@ function SignUp() {
 
         
   return (
-    <div className="w-full lg:w-4/12 mx-auto mt-14 lg:mt-10 mb-8 lg:px-6 bg-white  rounded-md">
+    <div className="h-full w-full lg:w-4/12 mx-auto mt-14 lg:mt-10 mb-8 lg:px-6 bg-white  rounded-md">
     
         <h1 className='text-3xl font-semibold mb-6'>
             Create an account
@@ -66,7 +66,7 @@ function SignUp() {
                     error={errors.email}
                     onFocus={() => setShowMoreFields(true)}/>
                     
-                    <div className={`transition-all duration-300 
+                    <div className={`transition-all duration-300 flex flex-col gap-1
                     ${showMoreFields ? 'opacity-100 max-h-[1000px]' : 'opacity-0 max-h-0 overflow-hidden'}`}>
                         <FloatingInput 
                             label="Create a password"
